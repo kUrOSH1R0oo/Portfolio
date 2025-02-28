@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kur0SHir0 - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon to avoid 404 -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="assets/profile.jpg" alt="Your Profile" class="profile-img">
+            <h1>Hey, I’m Ivan (Kur0Sh1r0)</h1>
+            <p class="typing-effect">CTF Player | Bug Bounty Hunter | PUP Sta. Maria Student</p>
+            <p class="bio">I'm a cybersecurity enthusiast cracking challenges, hunting bugs, and studying at Polytechnic University of the Philippines, Sta. Maria Campus. With a passion for offensive security, I continuously sharpen my skills in ethical hacking, penetration testing, and malware analysis. </p>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials">
+        <h2>Credentials</h2>
+        <div class="credentials-container">
+            <div class="credential-card">
+                <h3>Java Programming Competition - 2nd Place</h3>
+                <p>Secured 2nd place in a Java Programming Competition at ACLC Skills Camp.</p>
+            </div>
+            <div class="credential-card">
+                <h3>HackTheBox Binary Badlands University CTF 2024 - 120th Place</h3>
+                <p>Secured 120th place in HTB's University CTF. Solved 31/49 Challenges.</p>
+            </div>
+            <div class="credential-card">
+                <h3>TryHackMe Rank - Top 1 in the Philippines (Monthly)</h3>
+                <p>Ranked #1 in the Philippines on TryHackMe for the month.</p>
+            </div>
+            <div class="credential-card">
+                <h3>TryHackMe Rank - Top 112 in the Philippines (All Time)</h3>
+                <p>Ranked #1 in the Philippines on TryHackMe of all time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Operating Systems -->
+            <h3 class="skill-category">Operating Systems</h3>
+            <div class="skill-bar">Linux <span class="bar" data-width="85%"></span></div>
+            <div class="skill-bar">Windows <span class="bar" data-width="70%"></span></div>
+            <div class="skill-bar">Mac <span class="bar" data-width="50%"></span></div>
+            <!-- Programming Languages -->
+            <h3 class="skill-category">Programming Languages</h3>
+            <div class="skill-bar">Python <span class="bar" data-width="85%"></span></div>
+            <div class="skill-bar">Bash <span class="bar" data-width="85%"></span></div>
+            <div class="skill-bar">Ruby <span class="bar" data-width="80%"></span></div>
+            <div class="skill-bar">C <span class="bar" data-width="80%"></span></div>
+            <!-- Soft Skills -->
+            <h3 class="skill-category">Soft Skills</h3>
+            <div class="skill-bar">Problem-Solving & Critical Thinking <span class="bar" data-width="85%"></span></div>
+            <div class="skill-bar">Communication <span class="bar" data-width="80%"></span></div>
+            <div class="skill-bar">Time Management <span class="bar" data-width="70%"></span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filter-buttons">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="ctf">CTF</button>
+            <button data-filter="bug">Bug Bounty</button>
+            <button data-filter="tools">Tools</button>
+        </div>
+        <div class="project-container">
+            <div class="project-card" data-category="ctf">
+                <h3>SRA picoCTF 2023</h3>
+                <p>Writeup for SRA picoCTF Challenge - Hard Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/picoctf-cryptography-challenge-sra-writeup-791243da454e" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Rabbit Store</h3>
+                <p>Writeup for Rabbit Store TryHackMe Boot2Root Challenge - Medium Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/rabbit-store-boot2root-ctf-tryhackme-writeup-8689ab3206f2" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="bug">
+                <h3>Exploiting the Shadows</h3>
+                <p>How I Uncovered a Command Injection via OOB and Bagged $800</p>
+                <a href="https://medium.com/@kura1yum3/exploiting-the-shadows-how-i-uncovered-a-command-injection-via-oob-and-bagged-800-73c4bc90a130" target="_blank">Read Report</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Kitty</h3>
+                <p>Writeup for Kitty TryHackMe Boot2Root Challenge - Medium Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/kitty-tryhackme-ctf-challenge-writeup-793b17c95609" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Kiroku</h3>
+                <p>Kiroku Keylogger is a sophisticated tool designed for capturing and monitoring user activities on a target system.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Kiroku" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Denko</h3>
+                <p>Denko is a web crawler designed to automatically navigate through websites, extract and categorize links, and provide a structured view of the web content.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Denko" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>LookUp</h3>
+                <p>Writeup for LookUp TryHackMe Boot2Root Challenge - Easy Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/lookup-boot2root-tryhackme-writeup-29eb65ffac00" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Homework picoCTF</h3>
+                <p>Writeup for Homework picoCTF Challenge - Hard Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/picoctf-binary-exploitation-homework-hard-difficulty-writeup-51de9c3fab0f" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="bug">
+                <h3>Reflected XSS - NoBullProject</h3>
+                <p>How I found a Reflected XSS Vulnerability in NoBullProject</p>
+                <a href="https://medium.com/@kura1yum3/how-i-found-a-reflected-xss-vulnerability-in-nobullproject-5eadeac22e06" target="_blank">Read Report</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Frontier Marketplace</h3>
+                <p>Writeup for Frontier Marketplace HackTheBox Challenge - Medium Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/htb-ctf-2024-binary-badlands-blockchain-frontiermarketplace-f8e5f1e945a3" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Evilbox: 1</h3>
+                <p>Writeup for Evilbox: 1 Vulnhub Boot2Root Challenge - Easy Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/evilbox-1-boot2root-ctf-vulnhub-writeup-58d506c20edc" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Kudo</h3>
+                <p>Kudo is a versatile decoding toolkit that provides a range of algorithms to handle different types of encoded data.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Kudo" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>DarkJester</h3>
+                <p>DarkJester is a ransomware developed in Python, offering a wide range of capabilities that you always see in real-world ransomwares.</p>
+                <a href="https://github.com/kUrOSH1R0oo/DarkJester" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Haruko</h3>
+                <p>Haruko is a robust tool designed to generate customizable password wordlists</p>
+                <a href="https://github.com/kUrOSH1R0oo/Haruko" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>Gaara: 1</h3>
+                <p>Writeup for Gaara: 1 Vulnhub Boot2Root Challenge - Easy Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/gaara-1-boot2root-ctf-vulnhub-writeup-77e45a6a26cc" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="ctf">
+                <h3>PWN THE TRON</h3>
+                <p>Writeup for PWN THE TRON Vulnhub Boot2Root Challenge - Hard Difficulty</p>
+                <a href="https://medium.com/@kura1yum3/pwn-the-tron-boot2root-ctf-vulnhub-590974e79c9d" target="_blank">Read Writeup</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Hashipyon</h3>
+                <p>Hashipyon is a high-performance Argon2 hash cracker that uses a dictionary-based attack to recover plaintext passwords.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Hashipyon" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Himitsu</h3>
+                <p>Himitsu is a versatile reverse shell generator tool designed for generating payloads and PTY shells.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Himitsu" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Honogari</h3>
+                <p>Honogari is a powerful and specialized penetration testing tool developed to identify, assess, and exploit vulnerabilities in misconfigured or publicly accessible Firebase databases.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Honogari" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Sokushi</h3>
+                <p>Sokushi Spyware, is a potent surveillance tool that establishes a remote connection between the victim's system and the attacker's server.</p>
+                <a href="https://github.com/kUrOSH1R0oo/Sokushi" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-category="tools">
+                <h3>Fcknet</h3>
+                <p>FckNet is a relentless toolkit for network manipulation, designed to seize control, exploit weaknesses, and push the limits of network security. </p>
+                <a href="https://github.com/kUrOSH1R0oo/Fcknet" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
