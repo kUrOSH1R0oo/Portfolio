@@ -489,6 +489,35 @@ h2::after {
 }
 
 /* Credential badges */
+.cert-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+    margin-right: -6px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-dim) transparent;
+    /* max-height is set by JS to fit exactly 2 badges; this is a fallback
+       for the instant before JS runs */
+    max-height: 460px;
+}
+
+.cert-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cert-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cert-scroll::-webkit-scrollbar-thumb {
+    background: var(--accent-dim);
+    border-radius: 3px;
+}
+
+.cert-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
 .cert-badges {
     display: flex;
     flex-wrap: wrap;
