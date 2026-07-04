@@ -154,4 +154,43 @@ document.addEventListener('DOMContentLoaded', () => {
             closeLightbox();
         }
     });
+
+    const certScroll = document.getElementById('certScroll');
+
+    if (certScroll) {
+        const VISIBLE_COUNT = 2;
+
+        const sizeCertScroll = () => {
+            const items = certScroll.querySelectorAll('.cert-badges');
+            if (!items.length) return;
+
+            const count = Math.min(VISIBLE_COUNT, items.length);
+            let totalHeight = 0;
+
+            for (let i = 0; i < count; i++) {
+                const item = items[i];
+                const style = window.getComputedStyle(item);
+                const marginTop = parseFloat(style.marginTop) || 0;
+                const marginBottom = parseFloat(style.marginBottom) || 0;
+                totalHeight += item.getBoundingClientRect().height + marginTop + marginBottom;
+            }
+
+            if (items.length > VISIBLE_COUNT) {
+                certScroll.style.maxHeight = `${Math.ceil(totalHeight)}px`;
+            } else {
+                certScroll.style.maxHeight = 'none';
+            }
+        };
+
+        requestAnimationFrame(sizeCertScroll);
+        window.addEventListener('load', sizeCertScroll);
+        window.addEventListener('resize', sizeCertScroll);
+
+        const badgeImages = certScroll.querySelectorAll('img');
+        badgeImages.forEach(img => {
+            if (!img.complete) {
+                img.addEventListener('load', sizeCertScroll, { once: true });
+            }
+        });
+    }
 });
