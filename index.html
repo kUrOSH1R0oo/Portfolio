@@ -103,38 +103,40 @@
             <div class="certifications-container">
                 <div class="certification-category">
                     <h3>Certifications</h3>
-                    <div class="cert-badges">
-                        <button type="button" class="cert-badge" data-full="assets/CPTS.png" data-title="HTB Certified Penetration Testing Specialist" data-desc="Issued by Hack The Box for demonstrated professional-grade penetration testing skills.">
-                            <span class="cert-badge-frame">
-                                <picture>
-                                    <img src="assets/CPTS.png" alt="HTB Certified Penetration Testing Specialist badge" loading="lazy" width="1491" height="1055">
-                                </picture>
-                            </span>
-                            <span class="cert-badge-label">HTB Certified Penetration Testing Specialist</span>
-                            <span class="cert-badge-cta">View Certificate →</span>
-                        </button>
-                    </div>
-                    <div class="cert-badges">
-                        <button type="button" class="cert-badge" data-full="assets/WANDERARS.png" data-title="HTB Pro Labs — Wanderer" data-desc="Issued by Hack The box for completing Wanderer Pro Labs">
-                            <span class="cert-badge-frame">
-                                <picture>
-                                    <img src="assets/WANDERARS.png" alt="HackTheBox Wanderer Certificate" loading="lazy" width="1148" height="808">
-                                </picture>
-                            </span>
-                            <span class="cert-badge-label">HTB Prolabs: Wanderer</span>
-                            <span class="cert-badge-cta">View Certificate →</span>
-                        </button>
-                    </div>
-                    <div class="cert-badges">
-                        <button type="button" class="cert-badge" data-full="assets/SHINRARS.png" data-title="HTB Pro Labs — Shinra" data-desc="Issued by Hack The box for completing Shinra Pro Labs">
-                            <span class="cert-badge-frame">
-                                <picture>
-                                    <img src="assets/SHINRARS.png" alt="HackTheBox Shinra Certificate" loading="lazy" width="1148" height="808">
-                                </picture>
-                            </span>
-                            <span class="cert-badge-label">HTB Prolabs: Shinra</span>
-                            <span class="cert-badge-cta">View Certificate →</span>
-                        </button>
+                    <div class="cert-scroll" id="certScroll">
+                        <div class="cert-badges">
+                            <button type="button" class="cert-badge" data-full="assets/CPTS.png" data-title="HTB Certified Penetration Testing Specialist" data-desc="Issued by Hack The Box for demonstrated professional-grade penetration testing skills.">
+                                <span class="cert-badge-frame">
+                                    <picture>
+                                        <img src="assets/CPTS.png" alt="HTB Certified Penetration Testing Specialist badge" loading="lazy" width="1491" height="1055">
+                                    </picture>
+                                </span>
+                                <span class="cert-badge-label">HTB Certified Penetration Testing Specialist</span>
+                                <span class="cert-badge-cta">View Certificate →</span>
+                            </button>
+                        </div>
+                        <div class="cert-badges">
+                            <button type="button" class="cert-badge" data-full="assets/WANDERARS.png" data-title="HTB Pro Labs — Wanderer" data-desc="Issued by Hack The box for completing Wanderer Pro Labs">
+                                <span class="cert-badge-frame">
+                                    <picture>
+                                        <img src="assets/WANDERARS.png" alt="HackTheBox Wanderer Certificate" loading="lazy" width="1148" height="808">
+                                    </picture>
+                                </span>
+                                <span class="cert-badge-label">HTB Prolabs: Wanderer</span>
+                                <span class="cert-badge-cta">View Certificate →</span>
+                            </button>
+                        </div>
+                        <div class="cert-badges">
+                            <button type="button" class="cert-badge" data-full="assets/SHINRARS.png" data-title="HTB Pro Labs — Shinra" data-desc="Issued by Hack The box for completing Shinra Pro Labs">
+                                <span class="cert-badge-frame">
+                                    <picture>
+                                        <img src="assets/SHINRARS.png" alt="HackTheBox Shinra Certificate" loading="lazy" width="1148" height="808">
+                                    </picture>
+                                </span>
+                                <span class="cert-badge-label">HTB Prolabs: Shinra</span>
+                                <span class="cert-badge-cta">View Certificate →</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="certification-category">
@@ -219,7 +221,7 @@
             </div>
             <div class="writeup-grid">
                 <div class="writeup-card">
-                    <h3>TryHackMe Rabbit Store Boot2Root — Writeup</h3>
+                    <h3>TryHackMe Rabbit Store Boot2Root — Writeup</h3>
                     <p>Abused a mass assignment flaw to activate privileged functionality, exploited SSRF to access internal API endpoints, achieved remote code execution through Jinja2 SSTI, and leveraged an exposed Erlang cookie to administer RabbitMQ, extract credential material, and obtain root access.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/tryhackme/tryhackme-rabbit-store-boot2root-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
@@ -259,27 +261,27 @@
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/tryhackme/tryhackme-operation-endgame-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
                 <div class="writeup-card">
-                    <h3>HackTheBox Snapped— Writeup</h3>
+                    <h3>HackTheBox Snapped— Writeup</h3>
                     <p>Abused CVE-2026-27944 to obtain encrypted Nginx UI backups and exposed decryption keys, extracted and cracked bcrypt credentials for SSH access, then exploited CVE-2026-3888 (snap-confine TOCTOU race condition) to gain root access via dynamic linker hijacking.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/hackthebox-lab/hackthebox-snapped-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
                 <div class="writeup-card">
-                    <h3>HackTheBox Principal— Writeup</h3>
+                    <h3>HackTheBox Principal— Writeup</h3>
                     <p>Forged privileged JWTs through CVE-2026-29000 in pac4j-jwt, extracted deployment credentials from an internal management API, and leveraged a compromised SSH CA private key to sign a root-authenticated certificate and obtain unrestricted access.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/hackthebox-lab/hackthebox-principal-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
                 <div class="writeup-card">
-                    <h3>HackTheBox Pterodactyl— Writeup</h3>
+                    <h3>HackTheBox Pterodactyl— Writeup</h3>
                     <p>Leveraged an unauthenticated path traversal vulnerability in Pterodactyl Panel to access PEAR components and gain remote code execution, extracted Laravel database credentials to recover and crack bcrypt password hashes for SSH access, and chained CVE-2025-6018 with CVE-2025-6019 to abuse Polkit/UDisks permissions and obtain root privileges.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/hackthebox-lab/hackthebox-pterodactyl-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
                 <div class="writeup-card">
-                    <h3>HackTheBox Hercules— Writeup</h3>
+                    <h3>HackTheBox Hercules— Writeup</h3>
                     <p>Leveraged LDAP Injection to gain a foothold in Active Directory, exploited AD CS certificate enrollment weaknesses, abused the msDS-KeyCredentialLink attribute through Shadow Credentials for persistent account takeover, and utilized Resource-Based Constrained Delegation to compromise privileged accounts and achieve domain dominance.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/hackthebox-lab/hackthebox-hercules-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
                 <div class="writeup-card">
-                    <h3>HackTheBox Cyber Apocalypse 2025 — Twin Oracle CTF Writeup</h3>
+                    <h3>HackTheBox Cyber Apocalypse 2025 — Twin Oracle CTF Writeup</h3>
                     <p>Cryptanalyzed a Blum-Blum-Shub (BBS) pseudo-random number generator to recover internal state, leveraged the recovered output to access a restricted RSA oracle, and exploited oracle responses to iteratively recover protected plaintext through an adaptive chosen-ciphertext attack.</p>
                     <a href="https://kur0sh1r0.gitbook.io/ctf-writeups/hackthebox/hackthebox-cyber-apocalypse-2025-twin-oracle-ctf-writeup" class="writeup-link">Read Write-Up</a>
                 </div>
